@@ -54,7 +54,9 @@ app.post("/blogs",function(req,res){
 	})
 });
 
-
+app.get("/blogs/:id",function(req,res){
+	res.send("Blog page");
+});
 
 
 app.listen(3000);
